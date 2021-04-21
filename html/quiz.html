@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	
+	<title>Quiz Application</title>
+	<link rel="stylesheet" text="text/css" href="../css/style.css">
+	<script src="../javascript/questions.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head>
+
+<body>
+		<h1 id = "subject">Quiz Application</h1><hr>
+
+
+		<div class = "content">
+			<div class="head">
+				<button id="choose" onclick="populate()">Choose</button>
+				<label id="timer_lbl">Date: </label><label id="date"></label>
+				<label id="timer_lbl">Timer: </label><label id="timer"></label>
+			</div>
+			<div class = "score">
+				<label id = "rightScore"></label><br>
+				<label id = "right">Correct</label><br>
+				<label id = "wrongScore"></label><br>
+				<label id = "wrong">Wrong</label>
+			</div>
+
+			<div class = "questions">
+				<p id ="question"> Let's start the quiz for sql & python</p><br>
+				<p id ="displayScore"></p>
+				<p id="answer"></p>
+			</div>
+
+			<div class = "control">
+
+				<button id="start" onclick="start()">Start</button><br>
+				<button id="next" onclick="displayNext()">Next >></button>
+				<button id="submit" onclick="submit()">Submit</button>
+
+			</div>
+<button id="quit" onclick="quit()">Quit!</button>
+		</div>
+
+		<div class = "footer">
+				<div class="footer_text">Copyright 2021, designed by <a href="" style="color:#0C8DA6">AVINASH RAVI</a> | <a href="" style="color:#0C8DA6"> Privacy Policy</a>	</div>
+		</div>
+</body>
+</html>
